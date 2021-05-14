@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title></title>
+    </head>
+    <body>
+        <input type="file" accept="text/plain,.CSV,application/vnd.ms-excel" id="file">
+        <div class="content">
+            <div class="file-box">
+                <span>Addresses with Balances</span><br>
+                <div id="file-box">
+                    <div id="fileBoxCenter">
+                        <img id="fileImg" src="uploadIcon.png" alt="">
+                        <p id="file-detail">Drop your files here or click to upload</p>
+                    </div>
+                </div>
+                <p class="accepted">Accepted: CSV / Excel / Txt</p>
+            </div>
+            <div id="error-box">
+                <p id="error"></p>
+            </div><br><br>
+            <button id="next">SEARCH</button><br><br><br>
+            <div id="loadingBar">
+            </div>
+            <button id="filled">Load filled addresses</button>
+            <button id="all">Load all addresses</button>
+            <div id="addresses">
+
+            </div>
+        </div>
+    
+    <script src="web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.4-a/xls.js"></script>
+    <script>function $(el){return(document.getElementById(el));}</script>
+    <script src="script.js"></script>
+    </body>
+    </html>

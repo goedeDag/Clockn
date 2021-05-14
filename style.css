@@ -1,0 +1,157 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #dbeeff;
+}
+
+* {
+    font-family: Gotham-Bold,PingFangSC-Semibold,Microsoft Yahei,sans-serif;
+}
+
+::placeholder {
+    opacity: 0.3;
+    color: #00174B;
+}
+
+.content {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    min-height: calc(100vh - 100px);
+}
+
+.content span {
+    font-weight: bold;
+    color: #00174B;
+}
+
+.content input {
+    margin-top: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #00174B;
+    height: 3em;
+    font-family: Gotham-Medium ,PingFangSC-Medium, Microsoft Yahei, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 25px;
+    border: none;
+}
+
+.file-box {
+    margin-top: 10px;
+}
+
+#file-box {
+    position: relative;
+    margin-top: 4px;
+    border-radius: 4px;
+    overflow: auto;
+    background-color: white;
+    height: 200px;
+    cursor: pointer;
+}
+
+#file-box div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#file-box div img {
+    width: 50px;
+}
+
+#file-box div p {
+    color: rgb(0, 23, 75);
+    font-weight: bold;
+}
+
+#file {
+    display: none;
+}
+
+#file-box:hover {
+    background-color: rgba(22, 125, 240, 0.2);
+}
+
+.file-box .accepted {
+    font-size: .88rem;
+    color: #aec2e3;
+    margin-top: 4px;
+}
+
+#file-box-data p {
+    margin-left: 15px;
+}
+
+#error-box {
+    border: 1px solid #ff6700;
+    background-color: #ff66003a;
+    color: #ff6700;
+    width: 67%;
+    display: none;
+}
+
+#error {
+    font-size: 0.75rem;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+button {
+    background-color: #000f32;
+    border-color: transparent;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#approve {
+    background-color: #000f32;
+    border-color: transparent;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    float: left;
+}
+
+#sendTransaction {
+    display: none;
+    background-color: #000f32;
+    border-color: transparent;
+    color: #fff;
+    padding: 15px 80px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filled {
+    display: none;
+}
+
+#all {
+    display: none;
+}
+
+#loadingBar {
+    width: 440px;
+    display: none;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#loadingBar div {
+    float: left;
+    width: 40px;
+    height: 50px;
+    background-color: white;
+    border-right: 2px solid black;
+    border-left: 2px solid  black;
+}
